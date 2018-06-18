@@ -1,6 +1,6 @@
 {
   "name": "origami-plugin-user-profiles",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Gravatar and default user profile avatars plugin for Origami CMS",
   "main": "build/index.js",
   "repository": "https://github.com/origami-cms/plugin-user-profiles",
