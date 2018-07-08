@@ -1,5 +1,4 @@
-import {Route} from 'origami-core-server';
-import {Origami} from 'origami-core-lib';
+import {Origami, Route} from 'origami-core-lib';
 import md5 from 'md5';
 import {resolve} from 'path';
 import request from 'request';

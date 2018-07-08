@@ -11,7 +11,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const origami_core_server_1 = require("origami-core-server");
+const origami_core_lib_1 = require("origami-core-lib");
 const md5_1 = __importDefault(require("md5"));
 const path_1 = require("path");
 const request_1 = __importDefault(require("request"));
@@ -19,7 +19,7 @@ const sendDefault = (res) => {
     return res.sendFile(path_1.resolve(__dirname, '../content/default-profile.svg'));
 };
 module.exports = (app) => {
-    const r = new origami_core_server_1.Route('/content/profiles/:userId');
+    const r = new origami_core_lib_1.Route('/content/profiles/:userId');
     r.get((req, res, next) => __awaiter(this, void 0, void 0, function* () {
         if (res.headersSent)
             return next();
